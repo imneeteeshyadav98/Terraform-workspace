@@ -14,3 +14,21 @@ variable "secret_key" {
   type = string
   default = "36npi6BNmfY+a5PCPzd25dzGLXY0QmsB0K1G4xR8"
 }
+
+variable "ami" {
+  description = "Ec2 instance image"
+  type = string
+  default = "ami-0789681fae8b18e56"
+}
+
+variable "instance_type" {
+  description = "Ec2 instance Type"
+  type = string
+  default = "t2.large"
+}
+
+variable "instance_keypair" {
+  description = "EC2 instance keypair"
+  type = string
+  default = "MyKeyPair"
+}
