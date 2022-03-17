@@ -15,6 +15,8 @@ sudo yum install jenkins -y
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
 sudo yum install firewalld -y 
+sudo systemctl start firewalld
+sudo systemctl enable firewalld
 sudo firewall-cmd --add-port=8080/tcp --permanent
 sudo firewall-cmd --reload
 sudo yum install postgresql-server postgresql-contrib -y 
